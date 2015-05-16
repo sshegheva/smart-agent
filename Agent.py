@@ -10,6 +10,7 @@
 
 # Install Pillow and uncomment this line to access image processing.
 #from PIL import Image
+from solver_utils import solve_problem
 
 class Agent:
     # The default constructor for your Agent. Make sure to execute any
@@ -44,4 +45,4 @@ class Agent:
     # Make sure to return your answer *as an integer* at the end of Solve().
     # Returning your answer as a string may cause your program to crash.
     def Solve(self,problem):
-        return -1
+        return solve_problem(problem)
